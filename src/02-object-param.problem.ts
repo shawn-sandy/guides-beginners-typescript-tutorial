@@ -1,7 +1,7 @@
 import { expect, it } from "vitest";
 
-export const addTwoNumbers = (params) => {
-  return params.first + params.second;
+export const addTwoNumbers = (params: { first: number, second: number}) => {
+  return params?.first + params?.second;
 };
 
 it("Should add the two numbers together", () => {
