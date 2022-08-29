@@ -7,8 +7,11 @@ interface User {
    * - 'admin'
    * - 'user'
    * - 'super-admin'
+   * - define a union type 
+   * - allows you to define more that one type variable/const
+   * - 'admin' | 'user' | 'super-admin'
    */
-  role: string;
+  role: 'admin' | 'user' | 'super-admin';
 }
 
 export const defaultUser: User = {
